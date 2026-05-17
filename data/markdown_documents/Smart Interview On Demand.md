@@ -1,0 +1,36 @@
+# Assessment: Smart Interview On Demand
+
+## Description
+Smart Interview On Demand is a  recorded  (asynchronous) video interview tool, that introduces you to each person behind the resume with a short-recorded video of them explaining why they would be an awesome addition to your team. A streamlined, minimum bias screening to ensure you shortlist top talent faster and find those hidden gems you may have otherwise missed.   
+Availability The administrator and evaluator interface is available in US English and Simplified Chinese only, as are the standard question banks.  However, custom questions can be added or recorded in any language. 
+
+The participant interface  is available in: Arabic, Brazilian Portuguese, Bulgarian, Canadian French, Chinese, Croatian, Czech, Danish, Dutch, Dutch (Belgium), Estonian, Finnish, French, German, Greek, Hindi, Hungarian, Italian, Indonesian, Japanese, Korean, Latvian, Lithuanian, Malaysian, Mexican Spanish, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Taiwanese Chinese, Thai, Turkish, UK English, Ukrainian, US English, Vietnamese.
+ 
+Your use of this assessment product may be subject to New York City Law 144 (Regulation of the Use of Automated Employment Decision Tools) (dated July 5, 2023). Compliance with Law 144 is your responsibility.
+Read more on https://www.shl.com/legal/shl-us-regulatory-compliance/
+
+## Duration
+Variable
+
+## Job Levels
+- Entry-Level
+- Supervisor
+- Manager
+- Front Line Manager
+- General Population
+- Graduate
+- Mid-Professional
+- Professional Individual Contributor
+
+## Languages
+- English (USA)
+- Chinese Simplified
+
+## Categories
+- Personality & Behavior
+
+## Adaptive
+no
+
+## Remote
+yes

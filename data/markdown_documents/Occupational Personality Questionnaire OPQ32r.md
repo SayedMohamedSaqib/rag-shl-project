@@ -1,0 +1,68 @@
+# Assessment: Occupational Personality Questionnaire OPQ32r
+
+## Description
+The SHL Occupational Personality Questionnaire, the OPQ32, is one of the most widely used and respected measures of workplace behavioural style in the world. It sets a high standard of measurement excellence, providing HR professionals and business managers with relevant and accurate information to make fast and well-informed people decisions. The OPQ32 provides a clear framework for understanding the impact of personality on job performance. It is internationally recognised for its accuracy of assessment. Over 90 independent validation studies have been conducted on the OPQ over a period of 25 years, across 20 countries and 40 industries, providing concrete evidence of its power to predict performance in the workplace.
+
+## Duration
+25 minutes
+
+## Job Levels
+- Professional Individual Contributor
+- Supervisor
+- Mid-Professional
+- Front Line Manager
+- General Population
+- Graduate
+- Manager
+- Director
+- Executive
+
+## Languages
+- English International
+- French (Canada)
+- Portuguese
+- Chinese Simplified
+- Chinese Traditional
+- French (Belgium)
+- French
+- Polish
+- Slovak
+- Czech
+- Danish
+- Flemish
+- Dutch
+- Estonian
+- Finnish
+- German
+- Greek
+- Hungarian
+- Icelandic
+- Indonesian
+- Italian
+- Japanese
+- Korean
+- Latvian
+- Lithuanian
+- Norwegian
+- English (USA)
+- Arabic
+- Portuguese (Brazil)
+- Spanish
+- Latin American Spanish
+- Romanian
+- Russian
+- Serbian
+- Swedish
+- Thai
+- Turkish
+- Malay
+- Vietnamese
+
+## Categories
+- Personality & Behavior
+
+## Adaptive
+no
+
+## Remote
+yes

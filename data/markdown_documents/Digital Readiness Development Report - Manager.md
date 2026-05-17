@@ -1,0 +1,33 @@
+# Assessment: Digital Readiness Development Report - Manager
+
+## Description
+This participant-oriented report is aimed employees with management responsibilities and summarizes the way that they have described their typical style at work and is interpreted against SHL's Digital Readiness Framework. The report describes the way the person typically behaves, rather than their actual skill levels. It gives an indication of the individual's likely strengths in each area and makes suggestions for development activities, based upon the information gained from the
+questionnaire.
+
+Note: this report is specifically aimed at managers. A version designed for individual contributors is also available (see Digital Readiness Report - IC).
+
+## Duration
+
+
+## Job Levels
+- Entry-Level
+- Executive
+- Front Line Manager
+- General Population
+- Graduate
+- Manager
+- Mid-Professional
+- Supervisor
+- Director
+
+## Languages
+- N/A
+
+## Categories
+- Personality & Behavior
+
+## Adaptive
+no
+
+## Remote
+yes

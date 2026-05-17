@@ -1,0 +1,29 @@
+# Assessment: Verify - Technical Checking - Next Generation
+
+## Description
+The Technical Checking assessment is part of the Verify suite of cognitive ability assessments. Technical Checking measures perceptual speed and accuracy. This assessment requires examinees to quickly and accurately match symbols and switches based on a given set of rules. The Technical Checking assessment is mostly non-verbal and features shapes and figures. As with all assessments included in the Verify suite, the Technical Checking assessment allows organizations to assess this aspect of cognitive ability in an unproctored setting. This assessment is appropriate for all job levels and job titles, but is especially relevant for jobs that require the ability to quickly assess the accuracy of information against a set of rules.
+
+## Duration
+5 minutes
+
+## Job Levels
+- Entry-Level
+
+## Languages
+- Latin American Spanish
+- English (USA)
+- English International
+- French
+- German
+- Italian
+- Dutch
+- Chinese Simplified
+
+## Categories
+- Ability & Aptitude
+
+## Adaptive
+no
+
+## Remote
+yes
