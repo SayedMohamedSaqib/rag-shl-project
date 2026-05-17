@@ -1,6 +1,7 @@
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
+from retrieval.config import EMBED_MODEL
 
 # ============================================================
 # SINGLETONS
@@ -26,7 +27,7 @@ def get_vector_store():
 
         _embeddings = HuggingFaceEmbeddings(
 
-            model_name="sentence-transformers/all-MiniLM-L6-v2",
+            model_name=EMBED_MODEL,
 
             encode_kwargs={
                 "normalize_embeddings": True

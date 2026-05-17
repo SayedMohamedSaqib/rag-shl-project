@@ -19,4 +19,4 @@ SEMANTIC_WEIGHT = 0.7
 
 KEYWORD_WEIGHT = 0.3
 
-DEVICE = "cuda"
+DEVICE = "cpu"
