@@ -1,16 +1,49 @@
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
-from retrieval.config import CHROMA_DIR
+
+# ============================================================
+# SINGLETONS
+# ============================================================
+
+_embeddings = None
+
+_vector_store = None
 
 
+# ============================================================
+# GET VECTOR STORE
+# ============================================================
 
-def load_vector_store(embeddings):
+def get_vector_store():
 
-    vector_store = Chroma(
+    global _embeddings
+    global _vector_store
 
-        persist_directory=str(CHROMA_DIR),
+    if _vector_store is None:
 
-        embedding_function=embeddings
-    )
+        print("\nLoading embeddings...")
 
-    return vector_store
+        _embeddings = HuggingFaceEmbeddings(
+
+            model_name="sentence-transformers/all-MiniLM-L6-v2",
+
+            encode_kwargs={
+                "normalize_embeddings": True
+            }
+        )
+
+        print("Embeddings loaded")
+
+        print("\nLoading vector store...")
+
+        _vector_store = Chroma(
+
+            persist_directory="chroma_db",
+
+            embedding_function=_embeddings,
+        )
+
+        print("Vector store loaded")
+
+    return _vector_store

@@ -7,12 +7,8 @@ from api.schemas import (
     Recommendation,
 )
 
-from retrieval.embeddings import (
-    load_embeddings,
-)
-
 from retrieval.vector_store import (
-    load_vector_store,
+    get_vector_store,
 )
 
 from retrieval.semantic_retriever import (
@@ -51,63 +47,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ========================================================
-# LOAD EMBEDDINGS
-# ========================================================
-
-print("\nLoading embeddings...")
-
-embeddings = load_embeddings()
-
-print("Embeddings loaded")
-
-# ========================================================
-# LOAD VECTOR STORE
-# ========================================================
-
-print("\nLoading vector store...")
-
-vector_store = load_vector_store(
-    embeddings
-)
-
-print("Vector store loaded")
-
-# ========================================================
-# SEMANTIC RETRIEVER
-# ========================================================
-
-semantic_retriever = (
-    build_semantic_retriever(
-        vector_store
-    )
-)
-
-# ========================================================
-# BM25 RETRIEVER
-# ========================================================
-
-all_docs = vector_store.similarity_search(
-    "assessment",
-    k=1000
-)
-
-bm25_retriever = BM25Retriever.from_documents(
-    all_docs
-)
-
-bm25_retriever.k = 20
-
-# ========================================================
-# RETRIEVAL PIPELINE
-# ========================================================
-
-pipeline = RetrievalPipeline(
-    semantic_retriever=semantic_retriever,
-    bm25_retriever=bm25_retriever,
-)
-
 print("\nAPI Ready")
+
 
 # ========================================================
 # HEALTH ENDPOINT
@@ -119,6 +60,7 @@ def health():
     return {
         "status": "ok"
     }
+
 
 # ========================================================
 # CHAT ENDPOINT
@@ -195,6 +137,42 @@ def chat(request: ChatRequest):
     # ====================================================
 
     if action == "retrieve":
+
+        # ================================================
+        # LAZY LOAD VECTOR STORE
+        # ================================================
+
+        vector_store = get_vector_store()
+
+        # ================================================
+        # BUILD RETRIEVERS
+        # ================================================
+
+        semantic_retriever = (
+            build_semantic_retriever(
+                vector_store
+            )
+        )
+
+        all_docs = vector_store.similarity_search(
+            "assessment",
+            k=1000
+        )
+
+        bm25_retriever = BM25Retriever.from_documents(
+            all_docs
+        )
+
+        bm25_retriever.k = 20
+
+        # ================================================
+        # PIPELINE
+        # ================================================
+
+        pipeline = RetrievalPipeline(
+            semantic_retriever=semantic_retriever,
+            bm25_retriever=bm25_retriever,
+        )
 
         results = pipeline.run(
             messages
