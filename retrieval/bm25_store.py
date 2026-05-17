@@ -24,7 +24,10 @@ def get_bm25_retriever():
             encoding="utf-8"
         ) as f:
 
-            data = json.load(f)
+            data = json.load(
+                f,
+                strict = False
+            )
 
         documents = []
 
