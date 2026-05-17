@@ -47,8 +47,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-print("\nAPI Ready")
+# ========================================================
+# PRELOAD VECTOR STORE
+# ========================================================
 
+print("\nPreloading vector store...")
+
+vector_store = get_vector_store()
+
+print("Vector store preloaded")
+
+print("\nAPI Ready")
 
 # ========================================================
 # HEALTH ENDPOINT
@@ -60,7 +69,6 @@ def health():
     return {
         "status": "ok"
     }
-
 
 # ========================================================
 # CHAT ENDPOINT
@@ -137,12 +145,6 @@ def chat(request: ChatRequest):
     # ====================================================
 
     if action == "retrieve":
-
-        # ================================================
-        # VECTOR STORE
-        # ================================================
-
-        vector_store = get_vector_store()
 
         # ================================================
         # SEMANTIC RETRIEVER
