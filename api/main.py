@@ -19,8 +19,8 @@ from retrieval.retrieval_pipeline import (
     RetrievalPipeline,
 )
 
-from langchain_community.retrievers import (
-    BM25Retriever,
+from retrieval.bm25_store import (
+    get_bm25_retriever,
 )
 
 from agent.decision_engine import (
@@ -139,13 +139,13 @@ def chat(request: ChatRequest):
     if action == "retrieve":
 
         # ================================================
-        # LAZY LOAD VECTOR STORE
+        # VECTOR STORE
         # ================================================
 
         vector_store = get_vector_store()
 
         # ================================================
-        # BUILD RETRIEVERS
+        # SEMANTIC RETRIEVER
         # ================================================
 
         semantic_retriever = (
@@ -154,16 +154,13 @@ def chat(request: ChatRequest):
             )
         )
 
-        all_docs = vector_store.similarity_search(
-            "assessment",
-            k=1000
-        )
+        # ================================================
+        # BM25 RETRIEVER
+        # ================================================
 
-        bm25_retriever = BM25Retriever.from_documents(
-            all_docs
+        bm25_retriever = (
+            get_bm25_retriever()
         )
-
-        bm25_retriever.k = 20
 
         # ================================================
         # PIPELINE
