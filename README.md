@@ -30,6 +30,9 @@ http://13.61.5.202:8080/docs
 GET /health
 ```
 
+<p align="center">
+  <img src="screenshots/health_endpoint.png" width="1000">
+</p>
 ## Chat Endpoint
 
 ```bash
