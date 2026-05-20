@@ -20,7 +20,9 @@ def build_retrieval_response(
             messages=messages,
         )
     )
-
+	
+    print("\nCOMPOSED RESPONSE:\n")
+    print(composed)
     recommendations = []
 
     for item in composed[

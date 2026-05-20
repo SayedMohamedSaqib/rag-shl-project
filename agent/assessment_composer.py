@@ -83,19 +83,10 @@ def group_results(results):
 
         metadata = doc.metadata
 
-        categories = [
 
-            str(cat).lower()
-
-            for cat in metadata.get(
-                "categories",
-                []
-            )
-        ]
-
-        categories_text = " ".join(
-            categories
-        )
+        categories_text = str(
+            metadata.get("categories", "")
+        ).lower()
 
         # ====================================================
         # TECHNICAL

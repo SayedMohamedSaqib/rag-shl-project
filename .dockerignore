@@ -1,0 +1,4 @@
+taxonomy_chroma_db
+.git
+__pycache__
+*.pyc

@@ -303,11 +303,11 @@ Represent this assessment catalog entry for retrieval.
                 "remote": remote,
 
                 # Non-empty lists
-                "job_levels": job_levels,
+                "job_levels": ", ".join(job_levels),
 
-                "languages": languages,
+                "languages": ", ".join(languages),
 
-                "categories": categories,
+                "categories": ", ".join(categories),
 
                 # Misc
                 "status": safe_str(
