@@ -38,6 +38,9 @@ GET /health
 ```bash
 POST /chat
 ```
+<p align="center">
+  <img src="screenshots/chat_endpoint.png" width="1000">
+</p>
 
 ---
 
