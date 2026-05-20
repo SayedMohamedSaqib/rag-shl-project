@@ -17,7 +17,13 @@ http://13.61.5.202:8080
 ```bash
 http://13.61.5.202:8080/docs
 ```
+<p align="center">
+  <img src="screenshots/docs_intent.png" width="1000">
+</p>
 
+<p align="center">
+  <img src="screenshots/docs_response.png" width="1000">
+</p>
 ## Health Endpoint
 
 ```bash
